@@ -7,5 +7,10 @@ RSpec.describe StringCalculator do
       string_calculator = StringCalculator.new("")
       expect(string_calculator.add).to eq(0)
     end
+
+    it "hendle single number string and returns that number" do
+      string_calculator = StringCalculator.new("1")
+      expect(string_calculator.add).to eq(1)
+    end
   end
 end
