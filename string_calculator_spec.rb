@@ -24,7 +24,7 @@ RSpec.describe StringCalculator do
     end
 
     it "handle different delimiters in string" do
-      string_calculator = StringCalculator.new("//;\n1;2")
+      string_calculator = StringCalculator.new("//;\n1;2;3")
       expect(string_calculator.add).to eq(6)
     end
   end
